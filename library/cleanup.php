@@ -29,7 +29,9 @@ function start_cleanup() {
     add_filter('get_image_tag_class', 'image_tag_class', 0, 4);
     add_filter('get_image_tag', 'image_editor', 0, 4);
     add_filter( 'the_content', 'img_unautop', 30 );
-
+    
+    // remove admin bar, as it conflicts with fixed topbar
+    add_filter('show_admin_bar', '__return_false');
 } 
 
 /**
