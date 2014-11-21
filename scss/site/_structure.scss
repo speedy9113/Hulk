@@ -93,6 +93,36 @@ img.alignright {
 .top-bar-container {
   border-bottom: 1px solid $aluminum;
 }
+
+// Make an exceptional look for the topbar on frontpage
+
+.home .top-bar-container {
+  background: transparent;
+  .top-bar {
+    background: transparent;
+    .name h1 a {
+      color: #fff;
+    }
+  }
+  .top-bar-section ul li>a {
+    color: #fff;
+  }
+}
+
+// Revert the last state for fixed bar
+.home .top-bar-container.fixed {
+  background: #fff;
+  .top-bar {
+    background: #fff;
+    .name h1 a {
+      color: $oil;
+    }
+  }
+  .top-bar-section ul li>a {
+    color: $oil;
+  }
+}
+
 // A more subtle background color for the active menu item
 .top-bar-section li.active:not(.has-form) a:not(.button)  {
 	background: #272727;
