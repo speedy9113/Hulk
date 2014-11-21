@@ -90,7 +90,9 @@ img.alignright {
  * 3.0 Header, sidebar and footer
  * ----------------------------------------------------------------------------
  */
-
+.top-bar-container {
+  border-bottom: 1px solid $aluminum;
+}
 // A more subtle background color for the active menu item
 .top-bar-section li.active:not(.has-form) a:not(.button)  {
 	background: #272727;
@@ -106,6 +108,13 @@ img.alignright {
 	}
 }
 
+#sidebar {
+  article {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
 
 /**
  * 4.0 Content
