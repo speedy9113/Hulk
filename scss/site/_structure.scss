@@ -107,6 +107,7 @@ img.alignright {
   }
   .top-bar-section ul li>a {
     color: #fff;
+    background: transparent;
   }
 }
 
@@ -148,6 +149,13 @@ img.alignright {
   }
 }
 
+footer {
+  background: #1A79B5;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
 /**
  * 4.0 Content
  * ----------------------------------------------------------------------------
