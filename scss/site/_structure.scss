@@ -98,6 +98,7 @@ img.alignright {
 
 .home .top-bar-container {
   background: transparent;
+  border: 0;
   .top-bar {
     background: transparent;
     .name h1 a {
@@ -112,6 +113,7 @@ img.alignright {
 // Revert the last state for fixed bar
 .home .top-bar-container.fixed {
   background: #fff;
+  border: 1px solid $aluminum;
   .top-bar {
     background: #fff;
     .name h1 a {
