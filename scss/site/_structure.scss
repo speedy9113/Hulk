@@ -195,8 +195,21 @@ footer {
 	 * 4.2 Posts
 	 * ------------------------------------
 	 */
-
-	// Insert styles here
+  
+  article.post header {
+    border-bottom: 1px solid $aluminum;
+    margin-bottom: 1rem;
+  }
+	.meta {
+	  p {
+	    font-size: .8rem;
+	    color: $charcoal;
+	    a {
+	      color: $charcoal;
+	    }
+	  }
+	  
+	}
 
 
 	/**
