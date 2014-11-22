@@ -43,7 +43,7 @@
 <?php // You can start editing here. Customize the respond form below ?>
 <?php if ( have_comments() ) : ?>
 	<section id="comments">
-		<h3><?php comments_number(__('No Responses to', 'FoundationPress'), __('One Response to', 'FoundationPress'), __('% Responses to', 'FoundationPress') ); ?> &#8220;<?php the_title(); ?>&#8221;</h3>
+		<h3><i class="fi-comments"></i><?php comments_number(__('No Responses to', 'FoundationPress'), __('One Response to', 'FoundationPress'), __('% Responses to', 'FoundationPress') ); ?> &#8220;<?php the_title(); ?>&#8221;</h3>
 		<ol class="commentlist">
 		<?php wp_list_comments('type=comment&callback=FoundationPress_comments'); ?>
 
@@ -58,7 +58,7 @@
 <?php endif; ?>
 <?php if ( comments_open() ) : ?>
 <section id="respond">
-	<h3><?php comment_form_title( __('Leave a Reply', 'FoundationPress'), __('Leave a Reply to %s', 'FoundationPress') ); ?></h3>
+	<h3><i class="fi-comment"></i><?php comment_form_title( __('Leave a Reply', 'FoundationPress'), __('Leave a Reply to %s', 'FoundationPress') ); ?></h3>
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 	<p><?php printf( __('You must be <a href="%s">logged in</a> to post a comment.', 'FoundationPress'), wp_login_url( get_permalink() ) ); ?></p>
