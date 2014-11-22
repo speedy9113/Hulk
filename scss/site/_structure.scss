@@ -67,7 +67,9 @@ img.alignright {
 	margin: rem-calc(7) 0 rem-calc(7) rem-calc(24);
 }
 
-
+img.avatar {
+  border-radius: 50%;
+}
 // Add some whitespace between top bar and content
 .top-bar-container, .tab-bar {
 	margin-bottom: rem-calc(32);
@@ -210,7 +212,30 @@ footer {
 	 * ------------------------------------
 	 */
 
-	// Insert styles here
+  .commentbox {
+    background: #fff;
+    padding: 0.5rem;
+    
+    h3 {
+      background-color: $primary-color;
+      color: #fff;
+      padding-left: .5rem;
+      
+      i {
+        margin-right: .5rem;
+      }
+    }
+    
+    .commentlist {
+      list-style: none inside;
+      margin-left: 0;
+    }
+    
+    .avatar {
+      float: left;
+      margin-right: 1em;
+    }
+  }
 
 
 	/**
