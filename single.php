@@ -5,11 +5,13 @@
             <?php the_post_thumbnail(); ?>
         <?php endif; ?>
         <div class="row">
-            <header>
-                <h1 class="entry-title"><?php the_title(); ?></h1>
-                <?php FoundationPress_entry_meta(); ?>
-                <?php the_excerpt(); ?>
-            </header>
+            <div class="small-12 large-8 columns" role="main">
+                <header>
+                    <h1 class="entry-title"><?php the_title(); ?></h1>
+                    <?php FoundationPress_entry_meta(); ?>
+                    <?php the_excerpt(); ?>
+                </header>
+            </div>
         </div>
     </div>
     <div class="row">
