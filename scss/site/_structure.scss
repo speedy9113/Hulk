@@ -27,7 +27,11 @@
 // Reset margin and padding on figure element
 figure { 
 	margin: 0; 
-	padding: 0;
+	padding: 5px;
+	background: $primary-color;
+	img {
+	  border-radius: 3px;
+	}
 }
 
 // Add some basic styling for figcaption element
