@@ -14,7 +14,7 @@
 				<p><?php _e('Please try the following:', 'FoundationPress'); ?></p>
 				<ul>
 					<li><?php _e('Check your spelling', 'FoundationPress'); ?></li>
-					<li><?php printf(__('Return to the <a href="%s">home page</a>', 'FoundationPress'), home_url()); ?></li>
+					<li><?php printf(__('Return to the <a href="%s">home page</a>', 'FoundationPress'), esc_url(home_url())); ?></li>
 					<li><?php _e('Click the <a href="javascript:history.back()">Back</a> button', 'FoundationPress'); ?></li>
 				</ul>
 			</div>
